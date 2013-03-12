@@ -1,5 +1,4 @@
 <?php
-
 if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && ($_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest'))
 {
     ini_set("allow_url_fopen", 1); 
@@ -28,7 +27,6 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && ($_SERVER['HTTP_X_REQUESTED_WITH
                         ,"title" => (string)$video->title
                         ,"thumb" => (string)$thumb
                     );
-            
     }            
     die(json_encode($videos));
 }

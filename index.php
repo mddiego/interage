@@ -43,18 +43,12 @@
                                                   +     '<img src="'+_thumb+'" />'
                                                   +     '<p>'+_title+'</p>'
                                                   +'</a>'
-                                                  //+"<iframe src='https://www.youtube.com/v/"+_id+"' name='src' ></iframe><br />"
                                                   +'<a href="https://twitter.com/share" data-url="https://www.youtube.com/watch?v='+_id+'" data-text="'+_title+'" class="twitter-share-button" data-lang="en"></a>'
                                               +'</div>');
                                 }
                                 $("#divVideos").html(_html.join(""));
-                                //$(".divVideo:odd").css({"background":"#F0F0F0"})
-                                
-                                //$(".divVideo:even").css({"background":"#FAFAFA"})
-                                
                                 $(".fancybox").fancybox();
-                            	
-                                $.getScript('http://platform.twitter.com/widgets.js', function()
+                            	$.getScript('http://platform.twitter.com/widgets.js', function()
                                 {
                               		$('#divVideos').find('a.twitter-share-button').each(function(i)
                                     {
@@ -80,36 +74,23 @@
         
         </script>
     </head>
-
     <body>
+        <div class="navbar navbar-inner barraBusca">
         
-            
-                
-                
-                <div class="navbar navbar-inner barraBusca">
-                
-                    <div class="container-fluid">
-                        <div class="row-fluid text-center">
-                            <input type="text" class="span10" id="pesquisa" placeholder="Digite sua busca aqui..." title="Digite sua busca aqui..." />
-                            <button type="submit" class="btn " id="buscar"><span class="icon-search"></span></button>
-                        </div>
+            <div class="container-fluid">
+                <div class="row-fluid text-center">
+                    <input type="text" class="span10" id="pesquisa" placeholder="Digite sua busca aqui..." title="Digite sua busca aqui..." />
+                    <button type="submit" class="btn " id="buscar"><span class="icon-search"></span></button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="divVideos">
                     </div>
                 </div>
-                    
-                
-            
-            
-                <div class="container-fluid">
-                    <div class="row-fluid">
-                        <div class="span12">
-                            <div id="divVideos">
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            
-            
+            </div>
+        </div>
     </body>
 </html>
