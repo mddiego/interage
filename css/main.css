@@ -1,0 +1,41 @@
+.divVideo
+{
+    margin-left: 0px !important;
+    min-height: 150px !important;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #FAFAFA;
+    border: #E9E9E9 1px solid;
+}
+#pesquisa
+{
+    margin-bottom: 0px !important;
+}
+.btn
+{
+    margin-top: 0px !important;
+}
+.barraBusca
+{
+    padding-top: 10px;
+}
+.link img
+{
+    margin-top: 30px;
+    float: left;
+}
+
+.divVideo iframe
+{
+    height: 20px;
+    float: left;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+.link p
+{
+    margin-left: 25px;
+    width: 440px;
+    float: left;
+    margin-top: 30px;
+}
